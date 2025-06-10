@@ -63,7 +63,6 @@ pipeline {
         }
         
         stage ('Despliegue') {
-            agent any
             stages {
                 stage ('Despliegue en el VPS'){
                     steps{
