@@ -40,7 +40,7 @@ pipeline {
                 stage('Build') {
                     steps {
                         script {
-                            newApp = docker.build "$IMAGEN:$BUILD_NUMBER" --no-cache
+                            newApp = docker.build "$IMAGEN:$BUILD_NUMBER"
                         }
                     }
                 }
