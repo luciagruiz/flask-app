@@ -7,7 +7,7 @@ services:
     ports:
       - "5002:5002"  # Mapea el puerto del contenedor al host
     environment:
-      - NOMBRE=$NOMBRE  # Define una variable de entorno
+      - NOMBRE=flaskapp  # Define una variable de entorno
     volumes:
       - contador_data:/usr/share/app/contador.txt  # Mantiene el archivo contador.txt persistente
     restart: unless-stopped  # Reinicia el contenedor si falla
